@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <groups>
+  <run>
+  
+  
+  <include name="Teja"></include>
+  
+  </run>
+  
+  </groups>
+    <classes>
+      <class name="org.day5.A"/>
+      
+    </classes>
+    </test>
+    <test thread-count="5" name="Test1">
+  
+  <groups>
+  <run>
+  
+  <exclude name="waterman"></exclude>
+  <include name="Teja"></include>
+  
+  </run>
+  
+  </groups>
+    <classes>
+     
+      <class name="org.day5.B"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
